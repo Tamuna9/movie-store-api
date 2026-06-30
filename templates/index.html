@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover your next favorite film at MovieStar.">
+    <title>MovieStar — Find your next favorite film</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', v='4') }}">
+    <script src="{{ url_for('static', filename='js/app.js', v='4') }}" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="MovieStar home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span>MovieStar</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a class="active" href="#discover">Discover</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="cart-button" id="cartButton" type="button" aria-label="Open shopping bag">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M6.5 8h11l1 12h-13l1-12Z"></path>
+                <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+            </svg>
+            <span>Bag</span>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="discover">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> Curated cinema, chosen for you</p>
+                <h1>Stories worth<br><em>staying for.</em></h1>
+                <p class="hero-text">From cult classics to quiet discoveries, find the film that fits your evening.</p>
+
+                <form class="hero-search" id="searchForm" role="search">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                    <label class="sr-only" for="searchInput">Search movies</label>
+                    <input id="searchInput" type="search" placeholder="Search by title, director or genre…" autocomplete="off">
+                    <button type="submit">Explore</button>
+                </form>
+
+                <div class="hero-notes" aria-label="Store benefits">
+                    <span><b>✦</b> Handpicked collection</span>
+                    <span><b>○</b> Instant access</span>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Featured films">
+                <div class="sun-disc"></div>
+                <article class="poster poster-main">
+                    <span class="poster-number">01</span>
+                    <div class="poster-shape"></div>
+                    <div>
+                        <p>A film by<br>Mose Gisby</p>
+                        <h2>Generation<br>P</h2>
+                    </div>
+                </article>
+                <article class="poster poster-back">
+                    <span>FEATURED<br>COLLECTION</span>
+                    <div class="poster-orbit"></div>
+                    <strong>THE<br>STAR<br>CHAMBER</strong>
+                </article>
+                <div class="rating-pill">
+                    <span>VIEWER RATING</span>
+                    <strong>4.9 <small>/ 5</small></strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection" id="collection">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span></span> The collection</p>
+                    <h2>Find your next favorite</h2>
+                </div>
+                <p id="resultCount">Loading our collection…</p>
+            </div>
+
+            <div class="genre-filters" id="genreFilters" aria-label="Filter by genre"></div>
+
+            <div class="movie-grid" id="movieGrid" aria-live="polite">
+                <div class="loading-card"></div>
+                <div class="loading-card"></div>
+                <div class="loading-card"></div>
+                <div class="loading-card"></div>
+            </div>
+        </section>
+
+        <section class="about-strip" id="about">
+            <p>Great evenings begin with</p>
+            <strong>one unforgettable story.</strong>
+            <a href="#collection">Browse all films <span>→</span></a>
+        </section>
+    </main>
+
+    <footer>
+        <a class="brand footer-brand" href="/">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span>MovieStar</span>
+        </a>
+        <p>Curated cinema for curious minds.</p>
+        <p>© <span id="year"></span> MovieStar</p>
+    </footer>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle">
+        <div class="drawer-header">
+            <div>
+                <p class="eyebrow"><span></span> Your selection</p>
+                <h2 id="cartTitle">Shopping bag</h2>
+            </div>
+            <button class="close-button" id="closeCart" type="button" aria-label="Close shopping bag">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-summary">
+            <div><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+            <button class="checkout-button" id="checkoutButton" type="button">Complete purchase</button>
+            <p>Secure demo checkout · No payment details required</p>
+        </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

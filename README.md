@@ -1,223 +1,123 @@
-# 🎬 Movie Store API
+# MovieStar
 
-A simple **REST API for an online movie store** built with **Python, Flask, and MySQL**.
-The API allows users to search movies, manage a shopping cart, and simulate checkout.
+A light, editorial-style online movie store built with Python, Flask, MySQL,
+vanilla JavaScript, and CSS.
 
-This project demonstrates basic backend development concepts including:
+MovieStar combines a REST API with a responsive storefront where visitors can
+search and filter movies, check availability, add titles to a shopping bag,
+and complete a safe demo checkout.
 
-* REST API design
-* Database integration with MySQL
-* CSV fallback data source
-* Error handling
-* JSON responses
+## Features
 
----
+- Responsive light-themed storefront
+- 100-film catalogue
+- Search by title, author, or genre
+- Genre filters
+- Shopping bag with add and remove actions
+- Demo checkout without real payments
+- Availability and unavailability reasons:
+  - licensing pause
+  - coming soon
+  - physical edition sold out
+- MySQL as the primary data source
+- Automatic CSV fallback when MySQL is unavailable or incomplete
+- REST API endpoints
 
-# 🚀 Features
+## Tech stack
 
-* 🔎 Search movies by title, author, or genre
-* 🛒 Add movies to a shopping cart
-* 📦 View cart contents
-* 💳 Simulate checkout process
-* 🗄 MySQL database support
-* 📄 CSV fallback if the database is unavailable
-* 🌐 RESTful API endpoints
+| Technology | Purpose |
+| --- | --- |
+| Python | Application logic |
+| Flask | Web server and REST API |
+| MySQL | Primary movie database |
+| CSV | Offline fallback catalogue |
+| JavaScript | Search, filters, and shopping bag |
+| CSS | Responsive storefront design |
+| Requests | Optional external payment-gateway integration |
 
----
+## Project structure
 
-# 🛠 Tech Stack
-
-| Technology             | Purpose                     |
-| ---------------------- | --------------------------- |
-| Python                 | Main programming language   |
-| Flask                  | Web framework for API       |
-| MySQL                  | Database                    |
-| mysql-connector-python | MySQL connection            |
-| CSV                    | Backup data source          |
-| Requests               | Simulated payment API calls |
-
----
-
-# 📂 Project Structure
-
-```
+```text
 movieStore/
-│
-├── app.py            # Flask API application
-├── local_app.py      # CLI version of the Movie Store
-├── movieStore.csv    # Backup dataset
-├── requirements.txt  # Project dependencies
-└── README.md
+├── app.py
+├── local_app.py
+├── movieStore .csv
+├── requirements.txt
+├── templates/
+│   └── index.html
+└── static/
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── app.js
 ```
 
----
+## Installation
 
-# ⚙️ Installation
+Clone the repository and enter the project directory:
 
-Clone the repository:
-
-```
-git clone https://github.com/YOUR_USERNAME/movie-store-api.git
-```
-
-Move into the project directory:
-
-```
+```bash
+git clone https://github.com/Tamuna9/movie-store-api.git
 cd movie-store-api
 ```
 
-Install dependencies:
+Install the dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
----
+## Running the storefront
 
-# ▶️ Running the API
-
-Start the Flask server:
-
-```
+```bash
 python app.py
 ```
 
-The API will run at:
+Open:
 
-```
-http://127.0.0.1:5000
-```
-
----
-
-# 📡 API Endpoints
-
-### Home
-
-```
-GET /
+```text
+http://127.0.0.1:5000/
 ```
 
-Returns basic API information.
+The terminal reports which source was loaded and how many films are available.
 
----
+## Data sources
 
-### Get all movies
+The app first tries to load the `movies` table from the `movie_store` MySQL
+database. If MySQL is unavailable or its availability data is incomplete, the
+app automatically loads `movieStore .csv`.
 
-```
-GET /movies
-```
-
-Returns a list of all movies.
-
----
-
-### Search movies
-
-```
-GET /search?q=keyword
-```
-
-Example:
-
-```
-/search?q=action
-```
-
----
-
-### View cart
-
-```
-GET /cart
-```
-
-Returns items currently in the cart.
-
----
-
-### Add movie to cart
-
-```
-POST /cart
-```
-
-Example JSON body:
-
-```
-{
-  "id": 5
-}
-```
-
----
-
-### Checkout
-
-```
-POST /checkout
-```
-
-Simulates a payment request.
-
----
-
-# 🗄 Database
-
-The API uses a MySQL database:
-
-```
-movie_store
-```
-
-Table:
-
-```
-movies
-```
-
-Example schema:
+Expected MySQL schema:
 
 ```sql
 CREATE TABLE movies (
     id INT PRIMARY KEY,
-    title VARCHAR(255),
-    author VARCHAR(255),
-    genre VARCHAR(100),
-    price DECIMAL(10,2),
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    genre VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
     availability BOOLEAN
 );
 ```
 
----
+## API endpoints
 
-# 📄 CSV Fallback
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| GET | `/api` | API information |
+| GET | `/movies` | All movies |
+| GET | `/search?q=action` | Search movies |
+| GET | `/cart` | Shopping-bag contents |
+| POST | `/cart` | Add a movie using `{"id": 5}` |
+| DELETE | `/cart/<id>` | Remove a movie |
+| POST | `/checkout` | Complete demo checkout |
 
-If MySQL is unavailable, the application automatically loads data from:
+## Payment note
 
-```
-movieStore.csv
-```
+Checkout is simulated by default. It does not request payment details or charge
+real money. A real gateway can be enabled later by setting
+`PAYMENT_GATEWAY_URL` and implementing the provider's secure server-side flow.
 
-This ensures the API continues working even if the database connection fails.
-
----
-
-# 📌 Future Improvements
-
-Possible enhancements for this project:
-
-* SQL-based search queries
-* Docker containerization
-* API documentation with Swagger
-* User authentication
-* Persistent cart storage
-* Deployment to cloud platforms
-
----
-
-# 👩‍💻 Author
+## Author
 
 Tamuna Gegechkori
-
-Backend development practice project using Flask and MySQL.

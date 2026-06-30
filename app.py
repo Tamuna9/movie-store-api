@@ -1,9 +1,15 @@
 import csv
+import os
 import traceback
-import requests
-import mysql.connector
+from pathlib import Path
 
-from flask import Flask, request, jsonify
+import mysql.connector
+import requests
+from flask import Flask, jsonify, render_template, request
+
+
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / "movieStore .csv"
 
 app = Flask(__name__)
 
@@ -13,145 +19,251 @@ cart = []
 DB_CONFIG = {
     "host": "127.0.0.1",
     "user": "root",
-    "password": "",   
+    "password": "",
     "database": "movie_store",
     "port": 3306,
-    "use_pure": True
+    "use_pure": True,
 }
 
+UNAVAILABLE_STATUSES = (
+    {
+        "code": "licensing",
+        "label": "Licensing pause",
+        "message": "Temporarily unavailable while the license is renewed.",
+    },
+    {
+        "code": "coming_soon",
+        "label": "Coming soon",
+        "message": "This title has been announced and will be available soon.",
+    },
+    {
+        "code": "sold_out",
+        "label": "Disc sold out",
+        "message": "The physical edition is currently out of stock.",
+    },
+)
 
-# Database / File loading
+
+@app.after_request
+def prevent_stale_development_cache(response):
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+    return response
+
+
+# Database / file loading
 
 def get_db_connection():
-    return mysql.connector.connect(
-        host=DB_CONFIG["host"],
-        user=DB_CONFIG["user"],
-        password=DB_CONFIG["password"],
-        database=DB_CONFIG["database"],
-        port=DB_CONFIG["port"],
-        use_pure=DB_CONFIG["use_pure"]
-    )
+    return mysql.connector.connect(**DB_CONFIG)
+
+
+def normalize_movie(movie):
+    """Return the same predictable shape for MySQL and CSV records."""
+    raw_availability = movie.get("availability", movie.get("aviability", False))
+    if isinstance(raw_availability, str):
+        is_available = raw_availability.strip().lower() in {"1", "true", "yes"}
+    else:
+        is_available = bool(raw_availability)
+
+    try:
+        movie_id = int(movie.get("id", 0))
+    except (TypeError, ValueError):
+        movie_id = 0
+
+    try:
+        price = float(movie.get("price", 0))
+    except (TypeError, ValueError):
+        price = 0.0
+
+    if is_available:
+        status = {
+            "code": "available",
+            "label": "Available",
+            "message": "Available to add to your bag.",
+        }
+    else:
+        status = UNAVAILABLE_STATUSES[movie_id % len(UNAVAILABLE_STATUSES)]
+
+    return {
+        "id": movie_id,
+        "title": str(movie.get("title", "")).strip(),
+        "author": str(movie.get("author", "")).strip(),
+        "genre": str(movie.get("genre", "")).strip(),
+        "price": price,
+        "availability": is_available,
+        "availability_status": status,
+    }
+
 
 def load_movies_from_mysql():
     global movies
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute(
+            """
+            SELECT id, title, author, genre, price, availability
+            FROM movies
+            """
+        )
+        database_rows = cursor.fetchall()
+        valid_rows = [
+            movie
+            for movie in database_rows
+            if movie.get("id") and str(movie.get("title", "")).strip().lower() != "title"
+        ]
+        if not valid_rows:
+            raise ValueError("The movies table does not contain valid records")
+        if all(movie.get("availability") is None for movie in valid_rows):
+            raise ValueError("The movies table has no availability data")
 
-    cursor.execute("""
-    SELECT id, title, author, genre, price, availability
-    FROM movies
-""")
-    movies = cursor.fetchall()
-
-    cursor.close()
-    conn.close()
+        movies = [normalize_movie(movie) for movie in valid_rows]
+    finally:
+        cursor.close()
+        conn.close()
 
 
 def load_movies_from_csv():
     global movies
 
-    with open(
-        r"D:\Desktop\Success college\Python home work\movieStore\movieStore .csv",
-        "r",
-        encoding="utf-8"
-    ) as file:
-        reader = csv.DictReader(file)
-        movies = [row for row in reader]
+    with CSV_PATH.open("r", encoding="utf-8-sig", newline="") as file:
+        movies = [normalize_movie(row) for row in csv.DictReader(file)]
+
+
+def initialize_movies():
+    try:
+        load_movies_from_mysql()
+        available_count = sum(movie["availability"] for movie in movies)
+        print(
+            "Movies loaded from MySQL successfully "
+            f"({len(movies)} total, {available_count} available)"
+        )
+    except Exception:
+        print("MySQL load failed. Loading from CSV instead.")
+        if app.debug:
+            traceback.print_exc()
+        load_movies_from_csv()
+        available_count = sum(movie["availability"] for movie in movies)
+        print(
+            f"Movies loaded from CSV ({len(movies)} total, "
+            f"{available_count} available)"
+        )
+
 
 # Helper functions
 
 def search_movie(keyword):
-    keyword = keyword.lower().strip()
-
-    if not keyword:
+    normalized_keyword = keyword.lower().strip()
+    if not normalized_keyword:
         return movies
 
-    matches = []
+    return [
+        movie
+        for movie in movies
+        if normalized_keyword in movie["title"].lower()
+        or normalized_keyword in movie["author"].lower()
+        or normalized_keyword in movie["genre"].lower()
+    ]
 
-    for movie in movies:
-        title = str(movie.get("title", "")).lower()
-        author = str(movie.get("author", "")).lower()
-        genre = str(movie.get("genre", "")).lower()
-
-        if keyword in title or keyword in author or keyword in genre:
-            matches.append(movie)
-
-    return matches
 
 def add_movie_to_cart(movie_id):
     for movie in movies:
-        try:
-            if int(movie["id"]) == int(movie_id):
-                cart.append(movie)
-                return True
-        except (ValueError, TypeError, KeyError):
+        if movie["id"] != movie_id:
             continue
+        if not movie["availability"]:
+            return "unavailable"
+        if any(item["id"] == movie_id for item in cart):
+            return "already_added"
 
-    return False
+        cart.append(movie)
+        return "added"
+
+    return "not_found"
+
 
 def checkout(cart_items):
-    total = sum(float(movie["price"]) for movie in cart_items)
+    """Use a real gateway when configured; otherwise complete a safe demo checkout."""
+    if not cart_items:
+        return False
 
+    gateway_url = os.getenv("PAYMENT_GATEWAY_URL")
+    if not gateway_url:
+        return True
+
+    total = sum(movie["price"] for movie in cart_items)
     try:
-        response = requests.post(
-            "https://paymentgateway.com/process",
-            data={"total": total},
-            timeout=10
-        )
-
-        return response.status_code == 200
-
-    except requests.exceptions.Timeout:
-        print("Timeout while processing payment")
+        response = requests.post(gateway_url, data={"total": total}, timeout=10)
+        return response.ok
+    except requests.exceptions.RequestException as error:
+        app.logger.warning("Payment request failed: %s", error)
         return False
 
-    except requests.exceptions.RequestException as e:
-        print(f"Payment request error: {e}")
-        return False
 
 # Routes
 
 @app.route("/", methods=["GET"])
 def home():
-    return jsonify({
-        "message": "Movie Store API is running",
-        "data_source": "MySQL or CSV fallback",
-        "routes": [
-            "/movies",
-            "/search?q=action",
-            "/cart",
-            "/checkout"
-        ]
-    })
+    return render_template("index.html")
+
+
+@app.route("/api", methods=["GET"])
+def api_info():
+    return jsonify(
+        {
+            "message": "Movie Store API is running",
+            "data_source": "MySQL or CSV fallback",
+            "routes": ["/movies", "/search?q=action", "/cart", "/checkout"],
+        }
+    )
+
 
 @app.route("/movies", methods=["GET"])
 def get_movies():
     return jsonify(movies)
 
+
 @app.route("/search", methods=["GET"])
 def search():
-    keyword = request.args.get("q", "")
-    result = search_movie(keyword)
-    return jsonify(result)
+    return jsonify(search_movie(request.args.get("q", "")))
+
 
 @app.route("/cart", methods=["GET"])
 def view_cart():
     return jsonify(cart)
 
+
 @app.route("/cart", methods=["POST"])
 def add_to_cart_route():
     data = request.get_json(silent=True)
-
     if not data or "id" not in data:
         return jsonify({"error": "Missing movie id"}), 400
 
-    movie_id = data["id"]
+    try:
+        movie_id = int(data["id"])
+    except (TypeError, ValueError):
+        return jsonify({"error": "Movie id must be a number"}), 400
 
-    if add_movie_to_cart(movie_id):
-        return jsonify({"message": "Movie added to cart"})
-    else:
-        return jsonify({"error": "Movie not found"}), 404
+    result = add_movie_to_cart(movie_id)
+    if result == "added":
+        return jsonify({"message": "Movie added to cart"}), 201
+    if result == "unavailable":
+        return jsonify({"error": "This movie is currently unavailable"}), 409
+    if result == "already_added":
+        return jsonify({"error": "Movie is already in your cart"}), 409
+    return jsonify({"error": "Movie not found"}), 404
+
+
+@app.route("/cart/<int:movie_id>", methods=["DELETE"])
+def remove_from_cart(movie_id):
+    for index, movie in enumerate(cart):
+        if movie["id"] == movie_id:
+            cart.pop(index)
+            return jsonify({"message": "Movie removed from cart"})
+
+    return jsonify({"error": "Movie not found in cart"}), 404
+
 
 @app.route("/checkout", methods=["POST"])
 def checkout_cart():
@@ -161,19 +273,14 @@ def checkout_cart():
     if checkout(cart):
         cart.clear()
         return jsonify({"message": "Payment processed successfully"})
-    else:
-        return jsonify({"error": "Payment failed, please try again"}), 500
 
-# Main
+    return jsonify({"error": "Payment failed, please try again"}), 502
+
 
 if __name__ == "__main__":
-    try:
-        load_movies_from_mysql()
-        print("Movies loaded from MySQL successfully")
-    except Exception:
-        print("MySQL load failed:")
-        traceback.print_exc()
-        print("Loading from CSV instead...")
-        load_movies_from_csv()
-
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    initialize_movies()
+    app.run(
+        host="127.0.0.1",
+        port=5000,
+        debug=os.getenv("FLASK_DEBUG", "").lower() in {"1", "true", "yes"},
+    )

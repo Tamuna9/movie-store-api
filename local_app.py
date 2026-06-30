@@ -1,5 +1,7 @@
 import csv
 import requests
+from pathlib import Path
+
 #Helper Functions
 
 
@@ -9,12 +11,13 @@ import requests
 
 movies = []
 cart = []
+CSV_PATH = Path(__file__).resolve().parent / "movieStore .csv"
 
 
 
 def load_movie():
     global movies
-    with open(r"D:\Desktop\Success college\Python home work\movieStore\movieStore .csv","r") as file:
+    with CSV_PATH.open("r", encoding="utf-8-sig", newline="") as file:
         reader = csv.DictReader(file)
         movies = [row for row in reader]
  
@@ -33,7 +36,8 @@ def add_to_cart(movie_id, cart):
     for movie in movies:
         if int(movie["id"]) == movie_id:
             cart.append(movie)
-            return False
+            return True
+    return False
 
 def checkout(cart):
     total = sum(float(movie["price"]) for movie in cart)
@@ -116,9 +120,9 @@ def view_cart_menu():
     print("Shopping cart")
     print("=================")
     if cart:
-        print("{:<5} {:<40} {:<20} {:<10}".format("id", "title","author","prise"))
+        print("{:<5} {:<40} {:<20} {:<10}".format("id", "title","author","price"))
         for movie in cart:
-            print("{:<5} {:<40} {:<20} ${:<9}".format(movie["id"], movie["title"],movie["author"],movie["prise"]))    
+            print("{:<5} {:<40} {:<20} ${:<9}".format(movie["id"], movie["title"],movie["author"],movie["price"]))
     else:
         print("Your cart is empty")
 

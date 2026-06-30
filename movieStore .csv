@@ -1,46 +1,46 @@
 id,title,author,genre,price,aviability
 1,Generation P,Mose Gisby,Comedy|Drama|Sci-Fi,83.23,true
-2,Shanks,Jesselyn Busch,Fantasy|Horror,15.37,false
-3,Alien Autopsy,Janith Casacchia,Comedy|Sci-Fi,12.25,false
-4,"Big Fix, The",Genevra Hemms,Comedy|Mystery|Thriller,41.6,false
-5,"Star Chamber, The",Clarisse Stygall,Action|Crime|Drama|Thriller,81.21,true
-6,"Little Drummer Boy, The",Pippy Buer,Animation|Children|Musical,85.28,false
-7,Children (Börn),Powell Painten,Drama,69.97,true
-8,"Cheerleaders, The",Kliment Sedger,Comedy,95.03,false
-9,City for Conquest,Janka Whipp,Drama,17.9,false
+2,Shanks,Jesselyn Busch,Fantasy|Horror,15.37,true
+3,Alien Autopsy,Janith Casacchia,Comedy|Sci-Fi,12.25,true
+4,"Big Fix, The",Genevra Hemms,Comedy|Mystery|Thriller,41.6,true
+5,"Star Chamber, The",Clarisse Stygall,Action|Crime|Drama|Thriller,81.21,false
+6,"Little Drummer Boy, The",Pippy Buer,Animation|Children|Musical,85.28,true
+7,Children (BГ¶rn),Powell Painten,Drama,69.97,true
+8,"Cheerleaders, The",Kliment Sedger,Comedy,95.03,true
+9,City for Conquest,Janka Whipp,Drama,17.9,true
 10,The Care Bears Adventure in Wonderland,Betteann Arundel,Animation|Children|Comedy,84.47,false
-11,Bukowski: Born into This,Vivia Hembry,Documentary,24.16,false
+11,Bukowski: Born into This,Vivia Hembry,Documentary,24.16,true
 12,Dance with a Stranger,Walther Kirstein,Crime|Drama|Thriller,59.51,true
 13,Being Elmo: A Puppeteer's Journey,Barron Wimpeney,Documentary,55.45,true
 14,"Adventure in Space and Time, An",Linet Yarnall,Drama,69.16,true
-15,The Fuller Brush Man,Roseline Sanday,Adventure|Comedy,91.74,true
-16,Elvira Madigan,Torin Elderbrant,Drama|Romance,92.71,false
-17,Sudden Death,Lyman Node,Action,1.86,false
+15,The Fuller Brush Man,Roseline Sanday,Adventure|Comedy,91.74,false
+16,Elvira Madigan,Torin Elderbrant,Drama|Romance,92.71,true
+17,Sudden Death,Lyman Node,Action,1.86,true
 18,Cookie's Fortune,Hurley Pigeram,Comedy|Drama,9.15,true
-19,Angel in Cracow (Aniol w Krakowie),Rani Swett,Comedy|Drama,38.0,false
+19,Angel in Cracow (Aniol w Krakowie),Rani Swett,Comedy|Drama,38.0,true
 20,Night of the Living Dead 3D,Gregoire Dorrell,Adventure|Comedy|Fantasy|Horror,61.78,false
-21,"Love Punch, The",Dare Wingham,Comedy,92.01,false
+21,"Love Punch, The",Dare Wingham,Comedy,92.01,true
 22,"King and I, The",Brinna Vanyard,Animation|Children,29.47,true
-23,Contact,Harp Martinovsky,Drama|Sci-Fi,27.0,false
-24,Wild Geese II,Brandy Veysey,Action,51.01,false
+23,Contact,Harp Martinovsky,Drama|Sci-Fi,27.0,true
+24,Wild Geese II,Brandy Veysey,Action,51.01,true
 25,King of the Ants,Charles Manifield,Crime|Horror,9.37,false
 26,Apartment for Peggy,Vyky Marnes,Drama,45.68,true
-27,"Animatrix, The",Ashlee Savege,Action|Animation|Drama|Sci-Fi,70.55,false
-28,Strange Circus (Kimyô na sâkasu),Yoko Edmonstone,Horror|Mystery|Thriller,21.9,true
+27,"Animatrix, The",Ashlee Savege,Action|Animation|Drama|Sci-Fi,70.55,true
+28,Strange Circus (KimyГґ na sГўkasu),Yoko Edmonstone,Horror|Mystery|Thriller,21.9,true
 29,"Erased (Expatriate, The)",Steffen Duignan,Action|Thriller,57.49,true
 30,Reign of Assassins,Garvin Jinda,Action,74.16,false
-31,Otello,Matty Duckitt,Drama,91.07,false
+31,Otello,Matty Duckitt,Drama,91.07,true
 32,Dead Ringers,Amandi Yu,Drama|Horror|Thriller,42.32,true
 33,Gangsters,Clemmie Luckes,Action|Crime,32.02,true
-34,Trial and Error,Lydie Bullman,Comedy|Romance,65.86,false
-35,"Valet, The (La doublure)",Town Francecione,Comedy,50.17,true
-36,"High, Wide, and Handsome",Natala La Vigne,Musical|Western,62.46,false
-37,Near Dark,Noni Chadwick,Horror|Western,89.87,false
-38,Come Back to Me,Cindi Wand,Horror,31.15,false
-39,"Blood of a Poet, The (Sang d'un poète, Le)",Mabelle Sothcott,Drama|Fantasy,69.15,false
+34,Trial and Error,Lydie Bullman,Comedy|Romance,65.86,true
+35,"Valet, The (La doublure)",Town Francecione,Comedy,50.17,false
+36,"High, Wide, and Handsome",Natala La Vigne,Musical|Western,62.46,true
+37,Near Dark,Noni Chadwick,Horror|Western,89.87,true
+38,Come Back to Me,Cindi Wand,Horror,31.15,true
+39,"Blood of a Poet, The (Sang d'un poГЁte, Le)",Mabelle Sothcott,Drama|Fantasy,69.15,true
 40,Authors Anonymous,Corabelle Patridge,Comedy|Drama|Romance,95.32,false
 41,A Night at the Movies: The Horrors of Stephen King,Delmore Ettles,Documentary|Horror,76.77,true
-42,Art and Craft,Vivien Batter,Documentary,36.44,false
+42,Art and Craft,Vivien Batter,Documentary,36.44,true
 43,"Theory of Flight, The",Kendal Sinnie,Comedy|Drama|Romance,5.53,true
 44,Waking Ned Devine (a.k.a. Waking Ned),Tatum Ransfield,Comedy,56.91,true
 45,Nancy Drew,Jude Carvil,Adventure|Crime|Thriller,10.03,false
@@ -51,51 +51,51 @@ id,title,author,genre,price,aviability
 50,Tombs of the Blind Dead (La noche del terror ciego),Gabrila Giovannini,Horror|Mystery,90.74,false
 51,See You Next Tuesday,Ervin Honig,Comedy|Drama,48.31,true
 52,"Triumph of Love, The",Inglebert Wisam,Comedy,87.1,true
-53,Eight Below,Mersey Davsley,Action|Adventure|Drama|Romance,11.17,false
+53,Eight Below,Mersey Davsley,Action|Adventure|Drama|Romance,11.17,true
 54,Tooth & Nail,Vittoria Lawden,Drama|Horror|Sci-Fi,30.5,true
 55,"Maria, ihm schmeckt's nicht! (Maria, He Doesn't Like It)",Zarah Libbie,Comedy,90.22,false
-56,The Man They Could Not Hang,Neely Sodeau,Crime|Horror|Sci-Fi,14.32,false
-57,Someone Like You,Nell Tremmil,Comedy|Romance,13.98,false
-58,She Gods of Shark Reef,Glen Teasey,Adventure,35.36,false
-59,"Oh, God! You Devil",Engracia Bew,Comedy,4.52,false
-60,Special Bulletin,Aurora Kleinbaum,Drama,54.21,true
+56,The Man They Could Not Hang,Neely Sodeau,Crime|Horror|Sci-Fi,14.32,true
+57,Someone Like You,Nell Tremmil,Comedy|Romance,13.98,true
+58,She Gods of Shark Reef,Glen Teasey,Adventure,35.36,true
+59,"Oh, God! You Devil",Engracia Bew,Comedy,4.52,true
+60,Special Bulletin,Aurora Kleinbaum,Drama,54.21,false
 61,Capote,Helaina Bachmann,Crime|Drama,98.24,true
 62,Beowulf,Ram Lambird,Action|Horror|Sci-Fi,88.0,true
-63,"Half Life of Timofey Berezin, The (PU-239)",Reade Franzewitch,Drama,52.54,false
+63,"Half Life of Timofey Berezin, The (PU-239)",Reade Franzewitch,Drama,52.54,true
 64,Pin...,Howey Reedyhough,Horror,9.67,true
 65,"Dresser, The",Renard Twydell,Drama,69.9,false
 66,Marvellous,Ronnie Helliwell,Drama,75.84,true
-67,August Rush,Karie Cops,Drama|Musical,69.93,false
-68,Undead,Alta Brenneke,Action|Comedy|Horror|Sci-Fi,68.88,false
+67,August Rush,Karie Cops,Drama|Musical,69.93,true
+68,Undead,Alta Brenneke,Action|Comedy|Horror|Sci-Fi,68.88,true
 69,Bells of Innocence,Blanch Durnell,Horror,61.08,true
 70,Up the Academy,Ives Schuh,Comedy,28.13,false
 71,Help! I'm A Fish,Thadeus Popley,Adventure|Animation|Comedy,69.62,true
-72,Fathers' Day,Bill Danshin,Comedy,38.6,false
+72,Fathers' Day,Bill Danshin,Comedy,38.6,true
 73,Baran,Blakelee Thombleson,Adventure|Drama|Romance,67.21,true
-74,Into Eternity,Adella Clail,Documentary,88.03,false
+74,Into Eternity,Adella Clail,Documentary,88.03,true
 75,"Silent Night, Deadly Night III: Better Watch Out!",Alla Hegel,Horror,34.07,false
-76,The Land Before Time X: The Great Longneck Migration,Georgeta Royle,Adventure|Animation|Children,5.71,false
-77,"Four-Faced Liar, The",Gearard Crilley,Comedy|Drama|Romance,18.02,false
-78,Bananas,Benjie Woodyear,Comedy|War,25.2,false
-79,Samurai Vendetta,Adrian MacGall,Action|Drama,78.83,false
+76,The Land Before Time X: The Great Longneck Migration,Georgeta Royle,Adventure|Animation|Children,5.71,true
+77,"Four-Faced Liar, The",Gearard Crilley,Comedy|Drama|Romance,18.02,true
+78,Bananas,Benjie Woodyear,Comedy|War,25.2,true
+79,Samurai Vendetta,Adrian MacGall,Action|Drama,78.83,true
 80,"Odessa File, The",Muhammad Surman,Thriller,22.18,false
 81,Crackerjack,Germana Bradder,Comedy,22.05,true
-82,Deadline,Nikola Cadreman,Mystery|Thriller,20.82,false
+82,Deadline,Nikola Cadreman,Mystery|Thriller,20.82,true
 83,Blue Like Jazz,Broddie Willcot,Comedy|Drama,45.13,true
 84,Svengali,Pate Semechik,Drama|Horror,21.93,true
-85,"Scream, Blacula, Scream!",Holt Cuddy,Horror,44.2,true
-86,Toothless,Romonda Barsby,Children|Comedy,70.61,false
+85,"Scream, Blacula, Scream!",Holt Cuddy,Horror,44.2,false
+86,Toothless,Romonda Barsby,Children|Comedy,70.61,true
 87,The Vixen,Alard Ramsden,Comedy,95.34,true
-88,Sabata,Beverley Tull,Action|Western,11.24,false
+88,Sabata,Beverley Tull,Action|Western,11.24,true
 89,Skin Game,Antonius Kofax,Comedy|Romance|Western,14.07,true
 90,Simple Men,Danette Pretswell,Comedy|Drama,27.52,false
-91,Mahoney's Last Stand,Waverly Blount,Drama,89.49,false
-92,Blood Shot,Elsie Naughton,Action|Comedy|Horror,81.76,false
-93,Frontrunners,Udall Hudson,Documentary,98.5,false
-94,Battle Hymn,Jeramey Elcome,Drama,43.72,false
+91,Mahoney's Last Stand,Waverly Blount,Drama,89.49,true
+92,Blood Shot,Elsie Naughton,Action|Comedy|Horror,81.76,true
+93,Frontrunners,Udall Hudson,Documentary,98.5,true
+94,Battle Hymn,Jeramey Elcome,Drama,43.72,true
 95,"Craigslist Killer, The ",Fredra Jeayes,Crime|Drama|Thriller,42.08,false
 96,War of the Worlds 2: The Next Wave,Faythe Pinnere,Action,55.74,true
 97,Man Trouble,Starlene Labrom,Comedy|Romance,59.86,true
-98,"Trial of Billy Jack, The",Barnabas Meneux,Action|Drama|Musical,39.24,false
+98,"Trial of Billy Jack, The",Barnabas Meneux,Action|Drama|Musical,39.24,true
 99,"Furies, The",Leese Dinsmore,Drama|Romance|Western,5.85,true
 100,"Map of the World, A",Dayna Caccavari,Drama,44.53,false
