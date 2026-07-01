@@ -7,6 +7,13 @@ MovieStar combines a REST API with a responsive storefront where visitors can
 search and filter movies, check availability, add titles to a shopping bag,
 and complete a safe demo checkout.
 
+## Live demo
+
+[Open MovieStar on GitHub Pages](https://tamuna9.github.io/movie-store-api/)
+
+The public demo is a static GitHub Pages edition. Its shopping bag is saved in
+the browser, and checkout remains a safe simulation with no real payments.
+
 ## Features
 
 - Responsive light-themed storefront

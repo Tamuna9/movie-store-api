@@ -1,0 +1,1302 @@
+[
+    {
+        "id":  1,
+        "title":  "Generation P",
+        "author":  "Mose Gisby",
+        "genre":  "Comedy|Drama|Sci-Fi",
+        "price":  83.23,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  2,
+        "title":  "Shanks",
+        "author":  "Jesselyn Busch",
+        "genre":  "Fantasy|Horror",
+        "price":  15.37,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  3,
+        "title":  "Alien Autopsy",
+        "author":  "Janith Casacchia",
+        "genre":  "Comedy|Sci-Fi",
+        "price":  12.25,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  4,
+        "title":  "Big Fix, The",
+        "author":  "Genevra Hemms",
+        "genre":  "Comedy|Mystery|Thriller",
+        "price":  41.6,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  5,
+        "title":  "Star Chamber, The",
+        "author":  "Clarisse Stygall",
+        "genre":  "Action|Crime|Drama|Thriller",
+        "price":  81.21,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  6,
+        "title":  "Little Drummer Boy, The",
+        "author":  "Pippy Buer",
+        "genre":  "Animation|Children|Musical",
+        "price":  85.28,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  7,
+        "title":  "Children (BГ¶rn)",
+        "author":  "Powell Painten",
+        "genre":  "Drama",
+        "price":  69.97,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  8,
+        "title":  "Cheerleaders, The",
+        "author":  "Kliment Sedger",
+        "genre":  "Comedy",
+        "price":  95.03,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  9,
+        "title":  "City for Conquest",
+        "author":  "Janka Whipp",
+        "genre":  "Drama",
+        "price":  17.9,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  10,
+        "title":  "The Care Bears Adventure in Wonderland",
+        "author":  "Betteann Arundel",
+        "genre":  "Animation|Children|Comedy",
+        "price":  84.47,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    },
+    {
+        "id":  11,
+        "title":  "Bukowski: Born into This",
+        "author":  "Vivia Hembry",
+        "genre":  "Documentary",
+        "price":  24.16,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  12,
+        "title":  "Dance with a Stranger",
+        "author":  "Walther Kirstein",
+        "genre":  "Crime|Drama|Thriller",
+        "price":  59.51,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  13,
+        "title":  "Being Elmo: A Puppeteer\u0027s Journey",
+        "author":  "Barron Wimpeney",
+        "genre":  "Documentary",
+        "price":  55.45,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  14,
+        "title":  "Adventure in Space and Time, An",
+        "author":  "Linet Yarnall",
+        "genre":  "Drama",
+        "price":  69.16,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  15,
+        "title":  "The Fuller Brush Man",
+        "author":  "Roseline Sanday",
+        "genre":  "Adventure|Comedy",
+        "price":  91.74,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "licensing",
+                                    "label":  "Licensing pause",
+                                    "message":  "Temporarily unavailable while the license is renewed."
+                                }
+    },
+    {
+        "id":  16,
+        "title":  "Elvira Madigan",
+        "author":  "Torin Elderbrant",
+        "genre":  "Drama|Romance",
+        "price":  92.71,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  17,
+        "title":  "Sudden Death",
+        "author":  "Lyman Node",
+        "genre":  "Action",
+        "price":  1.86,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  18,
+        "title":  "Cookie\u0027s Fortune",
+        "author":  "Hurley Pigeram",
+        "genre":  "Comedy|Drama",
+        "price":  9.15,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  19,
+        "title":  "Angel in Cracow (Aniol w Krakowie)",
+        "author":  "Rani Swett",
+        "genre":  "Comedy|Drama",
+        "price":  38,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  20,
+        "title":  "Night of the Living Dead 3D",
+        "author":  "Gregoire Dorrell",
+        "genre":  "Adventure|Comedy|Fantasy|Horror",
+        "price":  61.78,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  21,
+        "title":  "Love Punch, The",
+        "author":  "Dare Wingham",
+        "genre":  "Comedy",
+        "price":  92.01,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  22,
+        "title":  "King and I, The",
+        "author":  "Brinna Vanyard",
+        "genre":  "Animation|Children",
+        "price":  29.47,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  23,
+        "title":  "Contact",
+        "author":  "Harp Martinovsky",
+        "genre":  "Drama|Sci-Fi",
+        "price":  27,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  24,
+        "title":  "Wild Geese II",
+        "author":  "Brandy Veysey",
+        "genre":  "Action",
+        "price":  51.01,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  25,
+        "title":  "King of the Ants",
+        "author":  "Charles Manifield",
+        "genre":  "Crime|Horror",
+        "price":  9.37,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    },
+    {
+        "id":  26,
+        "title":  "Apartment for Peggy",
+        "author":  "Vyky Marnes",
+        "genre":  "Drama",
+        "price":  45.68,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  27,
+        "title":  "Animatrix, The",
+        "author":  "Ashlee Savege",
+        "genre":  "Action|Animation|Drama|Sci-Fi",
+        "price":  70.55,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  28,
+        "title":  "Strange Circus (KimyГґ na sГўkasu)",
+        "author":  "Yoko Edmonstone",
+        "genre":  "Horror|Mystery|Thriller",
+        "price":  21.9,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  29,
+        "title":  "Erased (Expatriate, The)",
+        "author":  "Steffen Duignan",
+        "genre":  "Action|Thriller",
+        "price":  57.49,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  30,
+        "title":  "Reign of Assassins",
+        "author":  "Garvin Jinda",
+        "genre":  "Action",
+        "price":  74.16,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "licensing",
+                                    "label":  "Licensing pause",
+                                    "message":  "Temporarily unavailable while the license is renewed."
+                                }
+    },
+    {
+        "id":  31,
+        "title":  "Otello",
+        "author":  "Matty Duckitt",
+        "genre":  "Drama",
+        "price":  91.07,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  32,
+        "title":  "Dead Ringers",
+        "author":  "Amandi Yu",
+        "genre":  "Drama|Horror|Thriller",
+        "price":  42.32,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  33,
+        "title":  "Gangsters",
+        "author":  "Clemmie Luckes",
+        "genre":  "Action|Crime",
+        "price":  32.02,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  34,
+        "title":  "Trial and Error",
+        "author":  "Lydie Bullman",
+        "genre":  "Comedy|Romance",
+        "price":  65.86,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  35,
+        "title":  "Valet, The (La doublure)",
+        "author":  "Town Francecione",
+        "genre":  "Comedy",
+        "price":  50.17,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  36,
+        "title":  "High, Wide, and Handsome",
+        "author":  "Natala La Vigne",
+        "genre":  "Musical|Western",
+        "price":  62.46,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  37,
+        "title":  "Near Dark",
+        "author":  "Noni Chadwick",
+        "genre":  "Horror|Western",
+        "price":  89.87,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  38,
+        "title":  "Come Back to Me",
+        "author":  "Cindi Wand",
+        "genre":  "Horror",
+        "price":  31.15,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  39,
+        "title":  "Blood of a Poet, The (Sang d\u0027un poГЁte, Le)",
+        "author":  "Mabelle Sothcott",
+        "genre":  "Drama|Fantasy",
+        "price":  69.15,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  40,
+        "title":  "Authors Anonymous",
+        "author":  "Corabelle Patridge",
+        "genre":  "Comedy|Drama|Romance",
+        "price":  95.32,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    },
+    {
+        "id":  41,
+        "title":  "A Night at the Movies: The Horrors of Stephen King",
+        "author":  "Delmore Ettles",
+        "genre":  "Documentary|Horror",
+        "price":  76.77,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  42,
+        "title":  "Art and Craft",
+        "author":  "Vivien Batter",
+        "genre":  "Documentary",
+        "price":  36.44,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  43,
+        "title":  "Theory of Flight, The",
+        "author":  "Kendal Sinnie",
+        "genre":  "Comedy|Drama|Romance",
+        "price":  5.53,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  44,
+        "title":  "Waking Ned Devine (a.k.a. Waking Ned)",
+        "author":  "Tatum Ransfield",
+        "genre":  "Comedy",
+        "price":  56.91,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  45,
+        "title":  "Nancy Drew",
+        "author":  "Jude Carvil",
+        "genre":  "Adventure|Crime|Thriller",
+        "price":  10.03,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "licensing",
+                                    "label":  "Licensing pause",
+                                    "message":  "Temporarily unavailable while the license is renewed."
+                                }
+    },
+    {
+        "id":  46,
+        "title":  "Wild Women",
+        "author":  "Elias Baudouin",
+        "genre":  "Action|Western",
+        "price":  29.49,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  47,
+        "title":  "Aurora",
+        "author":  "Lezley Rentenbeck",
+        "genre":  "Romance|Sci-Fi",
+        "price":  37.63,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  48,
+        "title":  "Happy Feet",
+        "author":  "Celeste Habbes",
+        "genre":  "Adventure|Animation|Children|Comedy|IMAX",
+        "price":  21.23,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  49,
+        "title":  "Blueprint for Murder, A",
+        "author":  "Shannan Worster",
+        "genre":  "Film-Noir|Mystery|Thriller",
+        "price":  78.48,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  50,
+        "title":  "Tombs of the Blind Dead (La noche del terror ciego)",
+        "author":  "Gabrila Giovannini",
+        "genre":  "Horror|Mystery",
+        "price":  90.74,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  51,
+        "title":  "See You Next Tuesday",
+        "author":  "Ervin Honig",
+        "genre":  "Comedy|Drama",
+        "price":  48.31,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  52,
+        "title":  "Triumph of Love, The",
+        "author":  "Inglebert Wisam",
+        "genre":  "Comedy",
+        "price":  87.1,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  53,
+        "title":  "Eight Below",
+        "author":  "Mersey Davsley",
+        "genre":  "Action|Adventure|Drama|Romance",
+        "price":  11.17,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  54,
+        "title":  "Tooth \u0026 Nail",
+        "author":  "Vittoria Lawden",
+        "genre":  "Drama|Horror|Sci-Fi",
+        "price":  30.5,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  55,
+        "title":  "Maria, ihm schmeckt\u0027s nicht! (Maria, He Doesn\u0027t Like It)",
+        "author":  "Zarah Libbie",
+        "genre":  "Comedy",
+        "price":  90.22,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    },
+    {
+        "id":  56,
+        "title":  "The Man They Could Not Hang",
+        "author":  "Neely Sodeau",
+        "genre":  "Crime|Horror|Sci-Fi",
+        "price":  14.32,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  57,
+        "title":  "Someone Like You",
+        "author":  "Nell Tremmil",
+        "genre":  "Comedy|Romance",
+        "price":  13.98,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  58,
+        "title":  "She Gods of Shark Reef",
+        "author":  "Glen Teasey",
+        "genre":  "Adventure",
+        "price":  35.36,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  59,
+        "title":  "Oh, God! You Devil",
+        "author":  "Engracia Bew",
+        "genre":  "Comedy",
+        "price":  4.52,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  60,
+        "title":  "Special Bulletin",
+        "author":  "Aurora Kleinbaum",
+        "genre":  "Drama",
+        "price":  54.21,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "licensing",
+                                    "label":  "Licensing pause",
+                                    "message":  "Temporarily unavailable while the license is renewed."
+                                }
+    },
+    {
+        "id":  61,
+        "title":  "Capote",
+        "author":  "Helaina Bachmann",
+        "genre":  "Crime|Drama",
+        "price":  98.24,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  62,
+        "title":  "Beowulf",
+        "author":  "Ram Lambird",
+        "genre":  "Action|Horror|Sci-Fi",
+        "price":  88,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  63,
+        "title":  "Half Life of Timofey Berezin, The (PU-239)",
+        "author":  "Reade Franzewitch",
+        "genre":  "Drama",
+        "price":  52.54,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  64,
+        "title":  "Pin...",
+        "author":  "Howey Reedyhough",
+        "genre":  "Horror",
+        "price":  9.67,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  65,
+        "title":  "Dresser, The",
+        "author":  "Renard Twydell",
+        "genre":  "Drama",
+        "price":  69.9,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  66,
+        "title":  "Marvellous",
+        "author":  "Ronnie Helliwell",
+        "genre":  "Drama",
+        "price":  75.84,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  67,
+        "title":  "August Rush",
+        "author":  "Karie Cops",
+        "genre":  "Drama|Musical",
+        "price":  69.93,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  68,
+        "title":  "Undead",
+        "author":  "Alta Brenneke",
+        "genre":  "Action|Comedy|Horror|Sci-Fi",
+        "price":  68.88,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  69,
+        "title":  "Bells of Innocence",
+        "author":  "Blanch Durnell",
+        "genre":  "Horror",
+        "price":  61.08,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  70,
+        "title":  "Up the Academy",
+        "author":  "Ives Schuh",
+        "genre":  "Comedy",
+        "price":  28.13,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    },
+    {
+        "id":  71,
+        "title":  "Help! I\u0027m A Fish",
+        "author":  "Thadeus Popley",
+        "genre":  "Adventure|Animation|Comedy",
+        "price":  69.62,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  72,
+        "title":  "Fathers\u0027 Day",
+        "author":  "Bill Danshin",
+        "genre":  "Comedy",
+        "price":  38.6,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  73,
+        "title":  "Baran",
+        "author":  "Blakelee Thombleson",
+        "genre":  "Adventure|Drama|Romance",
+        "price":  67.21,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  74,
+        "title":  "Into Eternity",
+        "author":  "Adella Clail",
+        "genre":  "Documentary",
+        "price":  88.03,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  75,
+        "title":  "Silent Night, Deadly Night III: Better Watch Out!",
+        "author":  "Alla Hegel",
+        "genre":  "Horror",
+        "price":  34.07,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "licensing",
+                                    "label":  "Licensing pause",
+                                    "message":  "Temporarily unavailable while the license is renewed."
+                                }
+    },
+    {
+        "id":  76,
+        "title":  "The Land Before Time X: The Great Longneck Migration",
+        "author":  "Georgeta Royle",
+        "genre":  "Adventure|Animation|Children",
+        "price":  5.71,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  77,
+        "title":  "Four-Faced Liar, The",
+        "author":  "Gearard Crilley",
+        "genre":  "Comedy|Drama|Romance",
+        "price":  18.02,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  78,
+        "title":  "Bananas",
+        "author":  "Benjie Woodyear",
+        "genre":  "Comedy|War",
+        "price":  25.2,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  79,
+        "title":  "Samurai Vendetta",
+        "author":  "Adrian MacGall",
+        "genre":  "Action|Drama",
+        "price":  78.83,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  80,
+        "title":  "Odessa File, The",
+        "author":  "Muhammad Surman",
+        "genre":  "Thriller",
+        "price":  22.18,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  81,
+        "title":  "Crackerjack",
+        "author":  "Germana Bradder",
+        "genre":  "Comedy",
+        "price":  22.05,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  82,
+        "title":  "Deadline",
+        "author":  "Nikola Cadreman",
+        "genre":  "Mystery|Thriller",
+        "price":  20.82,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  83,
+        "title":  "Blue Like Jazz",
+        "author":  "Broddie Willcot",
+        "genre":  "Comedy|Drama",
+        "price":  45.13,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  84,
+        "title":  "Svengali",
+        "author":  "Pate Semechik",
+        "genre":  "Drama|Horror",
+        "price":  21.93,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  85,
+        "title":  "Scream, Blacula, Scream!",
+        "author":  "Holt Cuddy",
+        "genre":  "Horror",
+        "price":  44.2,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    },
+    {
+        "id":  86,
+        "title":  "Toothless",
+        "author":  "Romonda Barsby",
+        "genre":  "Children|Comedy",
+        "price":  70.61,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  87,
+        "title":  "The Vixen",
+        "author":  "Alard Ramsden",
+        "genre":  "Comedy",
+        "price":  95.34,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  88,
+        "title":  "Sabata",
+        "author":  "Beverley Tull",
+        "genre":  "Action|Western",
+        "price":  11.24,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  89,
+        "title":  "Skin Game",
+        "author":  "Antonius Kofax",
+        "genre":  "Comedy|Romance|Western",
+        "price":  14.07,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  90,
+        "title":  "Simple Men",
+        "author":  "Danette Pretswell",
+        "genre":  "Comedy|Drama",
+        "price":  27.52,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "licensing",
+                                    "label":  "Licensing pause",
+                                    "message":  "Temporarily unavailable while the license is renewed."
+                                }
+    },
+    {
+        "id":  91,
+        "title":  "Mahoney\u0027s Last Stand",
+        "author":  "Waverly Blount",
+        "genre":  "Drama",
+        "price":  89.49,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  92,
+        "title":  "Blood Shot",
+        "author":  "Elsie Naughton",
+        "genre":  "Action|Comedy|Horror",
+        "price":  81.76,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  93,
+        "title":  "Frontrunners",
+        "author":  "Udall Hudson",
+        "genre":  "Documentary",
+        "price":  98.5,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  94,
+        "title":  "Battle Hymn",
+        "author":  "Jeramey Elcome",
+        "genre":  "Drama",
+        "price":  43.72,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  95,
+        "title":  "Craigslist Killer, The ",
+        "author":  "Fredra Jeayes",
+        "genre":  "Crime|Drama|Thriller",
+        "price":  42.08,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "sold_out",
+                                    "label":  "Disc sold out",
+                                    "message":  "The physical edition is currently out of stock."
+                                }
+    },
+    {
+        "id":  96,
+        "title":  "War of the Worlds 2: The Next Wave",
+        "author":  "Faythe Pinnere",
+        "genre":  "Action",
+        "price":  55.74,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  97,
+        "title":  "Man Trouble",
+        "author":  "Starlene Labrom",
+        "genre":  "Comedy|Romance",
+        "price":  59.86,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  98,
+        "title":  "Trial of Billy Jack, The",
+        "author":  "Barnabas Meneux",
+        "genre":  "Action|Drama|Musical",
+        "price":  39.24,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  99,
+        "title":  "Furies, The",
+        "author":  "Leese Dinsmore",
+        "genre":  "Drama|Romance|Western",
+        "price":  5.85,
+        "availability":  true,
+        "availability_status":  {
+                                    "code":  "available",
+                                    "label":  "Available",
+                                    "message":  "Available to add to your bag."
+                                }
+    },
+    {
+        "id":  100,
+        "title":  "Map of the World, A",
+        "author":  "Dayna Caccavari",
+        "genre":  "Drama",
+        "price":  44.53,
+        "availability":  false,
+        "availability_status":  {
+                                    "code":  "coming_soon",
+                                    "label":  "Coming soon",
+                                    "message":  "This title has been announced and will be available soon."
+                                }
+    }
+]
